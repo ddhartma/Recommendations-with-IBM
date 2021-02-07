@@ -3,7 +3,7 @@
 
 
 # Recommendations with IBM 
-Let's create an Article Recommendation Engine for users on the IBM Watson Studio platform. Recommend to those platform users articles which are placed in the IBM Watson database. This database contains real user-article-interaction data.
+Let's create an Article Recommendation Engine for users on the IBM Watson Studio platform by using real user-article-interaction data.
 
 I analyzed the interactions that users have with articles on the IBM Watson Studio platform. Based on that I made recommendations to them about new articles I think they would like. Below you can see an example of what the dashboard could look like displaying recommended articles on the IBM Watson Platform.
 
