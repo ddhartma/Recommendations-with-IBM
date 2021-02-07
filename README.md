@@ -30,16 +30,16 @@ You can create your own account to become a part of their community, and get a b
     - Singuar Value Decomposition (***SVD***)
     - Funk - Singular Value Decomposition (***FunkSVD***)
 
-        Singular Value Decomposition of a matrix describes its representation as the product of three special matrices (U-S-Vt). From this representation one can read off the singular values ​​of the matrix. Similar to the eigenvalues, these values characterize properties of the matrix. In case of Recommendations these properties are called ***Latent FeFactors***. A Latent Factor is not observed in the data directly, but we infer it based on the ratings (interactions) users give to items. Finding how items (like articles, movies, books, etc.) and user relate to Latent Factors is central for making predictions with SVD. 
+        Singular Value Decomposition of a matrix describes its representation as the product of three special matrices (U-S-Vt). From this representation one can read off the singular values ​​of the matrix. Similar to the eigenvalues, these values characterize properties of the matrix. In case of Recommendations these properties are called ***Latent Factors***. A Latent Factor is not observed in the data directly, but we infer it based on the ratings (interactions) users give to items. Finding how items (like articles, movies, books, etc.) and user relate to Latent Factors is central for making predictions with SVD. 
     
     - The U-matrix: 
         - contains info about how users are related to particular latent factors
-        - numbers (ratings) indicate how each user "feels" about each latent factor
+        - numbers (ratings / interactions) indicate how each user "feels" about each latent factor
         - n rows -- users
         - k columns -- latent factors
     
     - The V-transpose matrix:
-        - contains info about how latent factors are related to items (movies)
+        - contains info about how latent factors are related to items (e.g. articles, movies, books)
         - the higher the value the stronger the relationship
         - in case of movies: e.g. A.I. and WALL E are strongly related to the robot latent feature
         - k rows -- latent factors
