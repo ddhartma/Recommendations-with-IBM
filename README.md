@@ -26,7 +26,7 @@ You can create your own account to become a part of their community, and get a b
    | ***Example / Intuition*** | Common for luxury or rare purchases (cars, homes, jewelery). Get back items which fullfill certain criteria (e.g., "the maximum price of the car is X")       | "I liked the new Star Wars Film and I know you like SciFi movies, too. You should go to the cinema."       | You like Start Wars but you do not know Avatar. So let's recommend you Avatar. 
    | ***Similarity measurement***  | No Similarity measurement. Here user provide information about the types of recommendations they would like back. |Similarity Measurement via correlation coefficients, euclidian distance | Similarity Measurement via correlation coefficients, euclidian distance, cosine similarity (similarity matrix), TF-IDF (e.g. in case of filtering out the genre from text)
 
-- Besides these traditional techniques for recommendation based on ***matrix factorization*** 
+- Besides these traditional techniques for recommendation you could use techniques based on ***matrix factorization***:
     - Singuar Value Decomposition (***SVD***)
     - Funk - Singular Value Decomposition (***FunkSVD***)
 
