@@ -30,7 +30,32 @@ You can create your own account to become a part of their community, and get a b
     - Singuar Value Decomposition (***SVD***)
     - Funk - Singular Value Decomposition (***FunkSVD***)
 
-    Singular Value Decomposition of a matrix describes its representation as the product of three special matrices (U-S-Vt). From this representation one can read off the singular values ​​of the matrix. Similar to the eigenvalues, these values characterize properties of the matrix. In case of Recommendations these properties are called ***Latent Features***. Interesting side-note: Singular value decompositions exist for every matrix.
+        Singular Value Decomposition of a matrix describes its representation as the product of three special matrices (U-S-Vt). From this representation one can read off the singular values ​​of the matrix. Similar to the eigenvalues, these values characterize properties of the matrix. In case of Recommendations these properties are called ***Latent FeFactors***. A Latent Factor is not observed in the data directly, but we infer it based on the ratings (interactions) users give to items. Finding how items (like articles, movies, books, etc.) and user relate to Latent Factors is central for making predictions with SVD. 
+    
+    - The U-matrix: 
+        - contains info about how users are related to particular latent factors
+        - numbers (ratings) indicate how each user "feels" about each latent factor
+        - n rows -- users
+        - k columns -- latent factors
+    
+    - The V-transpose matrix:
+        - contains info about how latent factors are related to items (movies)
+        - the higher the value the stronger the relationship
+        - in case of movies: e.g. A.I. and WALL E are strongly related to the robot latent feature
+        - k rows -- latent factors
+        - m columns -- items
+
+    - Sigma matrix:
+        - k x k diagonal matrix
+        - only diagonal elements are not zero
+        - same number of rows and columns as number of latent factors
+        - values in the diagonal are always positive and sorted from largest to smallest
+        - the diagonal indicated how many latent factors we want to keep
+        - first weight is associated with the first latent factor
+        - if the the weights are larger, this is an indication that the correponding latent factor is more important to reproduce the ratings of the original user item matrix
+        - In case of movies: if a movie is strongly related to dogs, then this latent factor is more important in preticting ratings than using preferences on robots or sadness
+
+    Interesting side-note: Singular value decompositions exist for every matrix.
 
     SVD - Procedure:
     - ***Sort:*** In case of collected ratings over time
@@ -43,7 +68,6 @@ You can create your own account to become a part of their community, and get a b
     - ***Predict*** ratings (user-item-combination) for every pair
     - ***Compare*** the ratings of a certain user to our predictions
     - ***Understand***: If we do this for every rating in the test set we can understand how well our recommendation engine is working
-
 
 
 - ***Business Cases For Recommendations***: 
