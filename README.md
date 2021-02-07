@@ -65,6 +65,7 @@ This is the outline for this project (Outline of Jupyter Notebook).
 - [Extras & Concluding](#conclusions)
 
 ### Setup and Links
+- [Files in the repo](#Files_in_the_repo)
 - [Setup Instructions](#Setup_Instructions)
 - [Acknowledgments](#Acknowledgments)
 - [Further Links](#Further_Links)
@@ -550,8 +551,19 @@ Similar users are found by computing the dot product (cosine similyrity) of ever
 
     ![image2]
 
+# Files in the repo <a name="Files_in_the_repo"></a>
 
-    
+- ***README.md*** - the readme file of this repo
+- ***/notebook/Recommendations_with_IBM.ipynb*** - the notebook of this repo containing all the necessary code for IBM Watson article recommendations
+- ***/notebook/Recommendations_with_IBM.html*** - The html version of the notebook 'Recommendations_with_IBM.ipynb'
+- ***/notebook/user_item_matrix*** - a pickle file containing the data of the user-item matrix 
+- ***/notebook/text_for_readme_df.txt*** a file with markdown code for a descriptive table visualization for the dataframe ***df*** used in the notebook 
+- ***/notebook/text_for_readme_df_content.txt*** a file with markdown code for a descriptive table visualization for the dataframe ***df_content*** used in the notebook.
+- ***/notebook/project_tests.py*** a file for testing notebook outputs
+- ***assets*** - a folder with images for the README.
+- ***/data/user-item-interactions.csv*** - data for the dataframe df - columns: article_id, title and email
+- ***/data/articles_community.csv*** - data for the dataframe df_content - columns: doc_body, doc_description, doc_full_name, doc_status, article_id
+     
 # Setup Instructions <a name="Setup_Instructions"></a>
 The following is a brief set of instructions on setting up a cloned repository.
 
@@ -617,15 +629,12 @@ Recommendation Engines
 * [Essentials of recommendation engines: content-based and collaborative filtering](https://towardsdatascience.com/essentials-of-recommendation-engines-content-based-and-collaborative-filtering-31521c964922)
 * [AirBnB uses Embeddings for Recommendations](https://medium.com/airbnb-engineering/listing-embeddings-for-similar-listing-recommendations-and-real-time-personalization-in-search-601172f7603e)
 * [Location-Based Recommendation Systems](https://link.springer.com/referenceworkentry/10.1007%2F978-3-319-17885-1_1580)
-
 * [Introduction to Recommender System. Part 1 (Collaborative Filtering, Singular Value Decomposition)](https://hackernoon.com/introduction-to-recommender-system-part-1-collaborative-filtering-singular-value-decomposition-44c9659c5e75)
 - [Rank Based Recommendations](https://github.com/ddhartma/Recommendation-Engines#Knowledge_based_recommendations)
 - [User-User Based Collaborative Filtering](https://github.com/ddhartma/Recommendation-Engines#Knowledge_based_recommendations)
 - [Matrix Factorization based on traditional SVD (Singular Value Decomposition)](https://github.com/ddhartma/Matrix-Factorization-For-Recommendations#Cold_Start_Problem)
-
-
 * [Deep learning for recommender systems](https://ebaytech.berlin/deep-learning-for-recommender-systems-48c786a20e1a)
-
+* [Getting Started with a Movie Recommendation System](https://www.kaggle.com/ibtesama/getting-started-with-a-movie-recommendation-system)
 
 Git/Github
 * [GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
