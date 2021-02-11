@@ -86,7 +86,6 @@ This is the outline for this project (Outline of Jupyter Notebook).
 - [User-User Based Collaborative Filtering](#User-User)<br>
 - [Matrix Factorization](#Matrix-Fact)<br>
 - [Accuracy, Precision, Recall and F1-Score](#prec_and_recall)
-- [Extras & Concluding](#conclusions)
 
 ### Setup and Links
 - [Files in the repo](#Files_in_the_repo)
@@ -607,9 +606,8 @@ Similar users are found by computing the dot product (cosine similyrity) of ever
     ax.set_ylabel("Metric value")
     ```
 
-
-
-# Accuracy, Precision, Recall and F1-Score <a name="prec_and_recall"></a>
+    
+## Accuracy, Precision, Recall and F1-Score <a name="prec_and_recall"></a>
 - Check this [link](https://towardsdatascience.com/understanding-accuracy-recall-precision-f1-scores-and-confusion-matrices-561e0f5e328c) for more info
 - Check this [repo]() for more info.
 
